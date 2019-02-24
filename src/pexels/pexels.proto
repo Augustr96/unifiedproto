@@ -8,7 +8,7 @@ import "google/api/annotations.proto";
 import "src/utils/utils.proto";
 
 service Pexels {
-    rpc GetPhoto(GetPhotoRequest) returns (GetRequestResponse) {
+    rpc GetPhoto(GetPhotoRequest) returns (GetPhotoResponse) {
         option (google.api.http) = {
             get: "/pexels/GetPhoto"
         };
@@ -20,7 +20,7 @@ message GetPhotoRequest {
     int32 id = 1;
 }
 
-message GetRequestResponse {
+message GetPhotoResponse {
     utils.Status = 1;
 }
 
