@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package pexels;
+
+option go_package = "github.com/Augustr96/unifiedproto/goout/pexels";
+
+import "google/api/annotations.proto";
+import "src/utils/utils.proto";
+
+service Pexels {
+    rpc GetPhoto(GetPhotoRequest) returns (GetRequestResponse) {
+        option (google.api.http) = {
+            get: "/pexels/GetPhoto"
+        };
+    }
+}
+
+message GetPhotoRequest {
+    // photo id
+    int32 id = 1;
+}
+
+message GetRequestResponse {
+    utils.Status = 1;
+}
+
+

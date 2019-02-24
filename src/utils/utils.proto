@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package utils;
+
+option go_package = "";
+
+enum StatusCode {
+    STATUS_CODE_INVALID = 0;
+    STATUS_CODE_OK = 1;
+
+    // 各个服务在下面补充
+}
+
+// 基本返回状态
+message Status {
+    // 状态码
+    StatusCode code = 1;
+    // 返回信息
+    string message = 2;
+}
