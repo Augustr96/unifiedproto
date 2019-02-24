@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package pexels;
 
-option go_package = "goout/pexels";
+option go_package = "github.com/Augustr96/unifiedproto/goout/pexels";
 
 import "google/api/annotations.proto";
 import "src/utils/utils.proto";

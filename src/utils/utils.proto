@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package utils;
 
-option go_package = "goout/utils";
+option go_package = "github.com/Augustr96/unifiedproto/goout/utils";
 
 enum StatusCode {
     STATUS_CODE_INVALID = 0;
